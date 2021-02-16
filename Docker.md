@@ -41,7 +41,7 @@ Example: docker pull python:latest
 docker run <image-name>
 Example: docker run python
 
-NOTE: If you want to directly pull and run that image same time, you can direcly use the above command "docker run <image-name>". once you run this command it checks that image available locally otherwise it will automatically pull that image and run same time.
+<p> NOTE: If you want to directly pull and run that image same time, you can direcly use the above command "docker run <image-name>". once you run this command it checks that image available locally otherwise it will automatically pull that image and run same time. </p>
 ```
 
 - Running an Dacoker image in detach mode
@@ -77,5 +77,12 @@ NOTE: How do we know contianer id.? by runniner "docker ps" command we can get t
 - Running a two different versions of same Image with different PORT address to communicate with them.
 ```
 Example you are installed two versions of Python
-- python:3.9.1-buster
-- python:3.10.0a5-buster
+-- mysql:5.7.33
+-- mysql:latest
+
+Once run those images and check with "docker ps", you  will notice both of them having same PORT address. If they are having same port address we cannot communicate with them or unreachable. So we can change their post address.
+ 
+ Example PORT address 
+-- mysql:5.7.33 is 8379/tcp
+-- mysql:latest is 8379/tcp
+
