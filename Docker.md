@@ -41,33 +41,33 @@ Example: docker pull python:latest
 docker run <image-name>
 Example: docker run python
 ```
-<p> NOTE: If you want to directly pull and run that image same time, you can direcly use the above command "docker run <image-name>". once you run this command it checks that image available locally otherwise it will automatically pull that image and run same time. </p>
+<p><span style="color:green">NOTE: </span>If you want to directly pull and run that image same time, you can direcly use the above command "docker run <image-name>". once you run this command it checks that image available locally otherwise it will automatically pull that image and run same time. </p>
 
 - Running an Dacoker image in detach mode
 ```
 docker run <image-name> -d
 Example: docker run python -d
 ```
-<p>NOTE: The above command will run the conatiner in command line and it detach from that command line.</p>
+<p> <span style="color:green">NOTE: </span> The above command will run the conatiner in command line and it detach from that command line.</p>
 
 - Checking running docker containers
 ```
 docker ps
 ```
-<p>NOTE: The above command will list down all the running contianers(images) with "CONTAINER ID, IMAGE, COMMAND, CREATED, STATUS, PORTS, NAMES".</p>
+<p> <span style="color:green">NOTE: </span> The above command will list down all the running contianers(images) with "CONTAINER ID, IMAGE, COMMAND, CREATED, STATUS, PORTS, NAMES".</p>
 
 - If currently no container is running but you want to check history of docker containers which are stopped.
 ```
 docker ps -a
 ```
-<p>NOTE: The above command will list down all the running contianers(images) with "CONTAINER ID, IMAGE, COMMAND, CREATED, STATUS, PORTS, NAMES".</p>
+<p> <span style="color:green">NOTE: </span> The above command will list down all the running contianers(images) with "CONTAINER ID, IMAGE, COMMAND, CREATED, STATUS, PORTS, NAMES".</p>
 
 - Stopping docker container
 ```
 docker stop <Contianer-Id>
 Example: docker stop 898246e1d8d2
 ```
-<p>NOTE: How do we know contianer id.? by runniner "docker ps" command we can get the docker container Id.</p>
+<p> <span style="color:green">NOTE: </span>How do we know contianer id.? by runniner "docker ps" command we can get the docker container Id.</p>
 
 - Running a two different versions of same Image with different PORT address to communicate with them.
 <p>
