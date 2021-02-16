@@ -63,7 +63,7 @@ docker ps -a
 <p> <span style="color:green">NOTE: </span> The above command will list down all the running contianers(images) with "CONTAINER ID, IMAGE, COMMAND, CREATED, STATUS, PORTS, NAMES".</p>
 
 - Stopping docker container
-```
+```docker
 docker stop <Contianer-Id>
 Example: docker stop 898246e1d8d2
 ```
