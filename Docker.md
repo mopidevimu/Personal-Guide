@@ -154,3 +154,39 @@ Example:
 docker networks create MyNetwork
 ```
 
+- If you want to remove Docker container
+-- Force-remove a running container
+```
+docker rm --force <container name>
+Example:
+docker rm --force mysql
+```
+--Remove a container and its volumes
+```
+docker rm -v <container name>
+Example:
+docker rm -v mysql
+```
+
+--Remove a container and selectively remove volumes
+```
+Example volume : docker create -v awesome:/foo -v /bar --name hello mysql
+
+docker rm -v hello
+```
+
+-- Remove all stopped containers
+```
+docker rm $(docker ps -a -q)
+```
+
+- Showing disk usage by container
+```
+docker ps -s
+```
+
+- If you want to restart a container
+```
+docker restart mysql
+```
+
