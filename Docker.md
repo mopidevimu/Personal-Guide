@@ -39,7 +39,7 @@ Example:
  docker pull python:latest
 ```
 
-- Starting or running an Dacoker Image.
+- Starting or running an Docker Image.
 ```
 docker run <image-name>
 Example: 
@@ -47,7 +47,7 @@ docker run python
 ```
 <p> NOTE: If you want to directly pull and run that image same time, you can direcly use the above command "docker run <image-name>". once you run this command it checks that image available locally otherwise it will automatically pull that image and run same time. </p>
 
-- Running an Dacoker image in detach mode.
+- Running an Docker image in detach mode.
 ```
 docker run <image-name> -d
 Example: 
@@ -84,8 +84,8 @@ Example you are installed two versions of Mysql.
 ```
 <p>Once run those images and check with "docker ps", you  will notice both of them having same PORT address. If they are having same port address we cannot communicate with them or unreachable. So we can change their post addresses.</p>
  
- Example PORT address 
- ```
+Example PORT address 
+```
 -- mysql:5.7.33 is 8379/tcp
 -- mysql:latest is 8379/tcp
 ```
@@ -131,3 +131,26 @@ docker exec -it  898246e1d8d2 /bn/bash
 ```
 <p> The above command will open the container as root user in bash mode in same terminal. you can EXIT that termianl by using "exit".</p>
 <p>NOTE: How do we know contianer id.? by runniner "docker ps" command we can get the docker container Id.</p>
+
+- If you want to check docker images which are installed in your system.
+```
+docker images
+```
+<p>NOTE: The above command will list down all the images which are existed in system.</p>
+
+## Advanced Docker Commands
+
+- If you want to check existed docker networks or create network.
+
+-- List down all existed networks by defalut.
+```
+docker networks ls
+```
+
+-- Creating a New own Network
+```
+docker networks create <network-name>
+Example:
+docker networks create MyNetwork
+```
+
