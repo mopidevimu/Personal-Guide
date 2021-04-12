@@ -35,3 +35,9 @@ Step-4
       ```docker
       docker run <build image id>
       ```
+
+ Step-5
+    - In other way we can give a tag for building image
+      ```docker
+      docker run build -t murali/redis:latest .
+      ```     
