@@ -59,9 +59,13 @@ docker run python -d
 ```
 docker ps
 ```
+- Checking containers ever created
+```
+docker ps -all
+```
 <p>NOTE: The above command will list down all the running contianers(images) with "CONTAINER ID, IMAGE, COMMAND, CREATED, STATUS, PORTS, NAMES".</p>
 
-- If currently no container is running but you want to check history of docker containers which are stopped.
+- If currently no container is running but you want to check history of docker containers which one is stopped.
 ```
 docker ps -a
 ```
@@ -188,5 +192,41 @@ docker ps -s
 - If you want to restart a container
 ```
 docker restart mysql
+```
+
+- Removing all containers and cache
+```
+docekr system prune
+```
+
+- To create a container
+```
+docekr create <container_name>
+```
+
+- To start a container
+```
+docekr start <container_name>
+```
+
+
+- To stop a container
+```
+docekr stop <container_name>
+```
+
+- To kill a container
+```
+docekr kill <container_name>
+```
+
+- To view logs of a contianer
+```
+docekr logs <container>
+```
+
+- To open continer in interactive CLI mode in Shell
+```
+docekr exec -it  <container_name> sh
 ```
 
